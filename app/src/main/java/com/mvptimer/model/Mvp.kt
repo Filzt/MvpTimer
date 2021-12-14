@@ -1,7 +1,8 @@
 package com.mvptimer.model
 
 data class Mvp(
-    val image: int,
-    val name: string,
-    val timer: int,
+    val image: Int,
+    val name: String,
+    val map: String,
+    val timer: String,
 )
