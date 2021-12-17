@@ -5,14 +5,15 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<ImageView
-    android:id="@+id/mvp_image"
-    android:layout_width="120dp"
-    android:layout_height="120dp"
-    android:src="@drawable/abelha_rainha"
-    android:layout_margin="10dp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/mvp_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/abelha_rainha"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <TextView
         android:id="@+id/mvp_name"
         android:layout_width="match_parent"
@@ -32,24 +33,24 @@
         android:id="@+id/mvp_map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-           android:layout_marginTop="4dp"
+        android:layout_marginTop="4dp"
         android:text="mjolnir_04"
         android:textSize="15dp"
         android:layout_marginStart="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/mvp_name"
         app:layout_constraintTop_toBottomOf="@id/mvp_name" />
-    <TextView
-        android:id="@+id/mvp_timer"
+
+    <Button
+        android:id="@+id/mvp_timer_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="02:00"
         android:textColor="@android:color/white"
         android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="@id/mvp_map"
-        app:layout_constraintTop_toBottomOf="@id/mvp_map"
-        android:layout_marginTop="10dp"
-        android:background="@color/teal_700"
-        />
-
+        app:layout_constraintStart_toStartOf="@id/mvp_name"
+        app:layout_constraintTop_toBottomOf="@id/mvp_map" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
